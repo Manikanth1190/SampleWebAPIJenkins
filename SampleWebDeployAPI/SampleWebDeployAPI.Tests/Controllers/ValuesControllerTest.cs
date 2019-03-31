@@ -25,8 +25,8 @@ namespace SampleWebDeployAPI.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
             Assert.AreEqual(2, result.Count());
-            Assert.AreEqual("value1", result.ElementAt(0));
-            Assert.AreEqual("value2", result.ElementAt(1));
+            Assert.AreEqual("value111", result.ElementAt(0));
+            Assert.AreEqual("value222", result.ElementAt(1));
         }
 
         [TestMethod]
@@ -39,7 +39,7 @@ namespace SampleWebDeployAPI.Tests.Controllers
             string result = controller.Get(5);
 
             // Assert
-            Assert.AreEqual("value", result);
+            Assert.AreEqual("value5", result);
         }
 
         [TestMethod]
